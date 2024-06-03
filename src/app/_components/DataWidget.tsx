@@ -22,7 +22,7 @@ const DataWidget = (props: Props) => {
     <div className="flex flex-col w-[300px]">
       <button
         className="w-full border border-solid border-black p-3 rounded-md bg-yellow-500 shadow-xl my-4"
-        onClick={handleClick}
+        onClick={handleClick} data-testid="fetch-data-button"
       >
         Fetch Data
       </button>
