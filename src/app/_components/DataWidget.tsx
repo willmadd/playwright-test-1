@@ -29,8 +29,8 @@ const DataWidget = (props: Props) => {
       {loading ? (
         <span>Loading...</span>
       ) : message ? (
-        <div className="w-full border border-solid border-gray-500 bg-white p-3 rounded-md">
-          {message && <p>{message}</p>}
+        <div className="w-full border border-solid border-gray-500 bg-white p-3 rounded-md" id="result-box">
+          {message && <p data-testid="result">{message}</p>}
         </div>
       ) : (
         "no number yet"
